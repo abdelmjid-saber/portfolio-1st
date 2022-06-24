@@ -1,0 +1,35 @@
+.contacts {
+  background-color: var(--dark-color);
+  display: flex;
+  justify-content: center;
+}
+.contacts from {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 800px;
+}
+.contacts input:not(:last-child),
+textarea {
+  display: block;
+  font-family: "Roboto";
+  font-size: 16px;
+  height: 50px;
+  width: 100%;
+  color: #eee;
+  margin-bottom: 30px;
+  padding: 0;
+  background: 0 0;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  resize: none;
+  outline: 0;
+}
+textarea {
+  height: 150px;
+  resize: none;
+}
+.contacts input:not(:last-child):focus,
+textarea:focus {
+  border-bottom: 1px solid var(--main-color);
+}

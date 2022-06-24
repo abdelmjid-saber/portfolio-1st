@@ -1,0 +1,31 @@
+body {
+  border: none;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #bbb;
+  background: #101010;
+  letter-spacing: 0;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  @import url("./assets/fonts/Roboto.css");
+}
+
+ul {
+  list-style: none;
+}
+
+a:hover {
+  color: var(--main-color);
+}

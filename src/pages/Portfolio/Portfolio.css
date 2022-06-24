@@ -1,0 +1,134 @@
+.contents-m {
+  padding: 100px 200px;
+}
+@media (max-width: 1199px) {
+  .contents-m {
+    padding: 50px;
+  }
+}
+@media (max-width: 720px) {
+  .contents-m {
+    padding: 20px;
+  }
+}
+.protfolio {
+  background-color: var(--dark-color);
+}
+.protfolio .tags-protfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding-top: 100px;
+}
+
+.protfolio .tags-protfolio li {
+  list-style: none;
+  margin: 10px;
+  cursor: pointer;
+}
+.protfolio .tags-protfolio .all {
+  background-color: var(--main-color);
+  padding: 8px 16px;
+  border-radius: 17px;
+  color: var(--dark-color);
+  font-size: 18px;
+}
+
+.protfolio figure {
+  z-index: 1;
+  min-width: 400px;
+  overflow: hidden;
+  margin: 0 5px;
+  animation: show 0.8s linear ;
+  -webkit-animation: show 0.8s linear ;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.protfolio img {
+  width: 100%;
+  height: 250px;
+  left: 0;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 1px 1px rgba(244, 244, 244, 0.075),
+    0 2px 2px rgba(255, 255, 255, 0.075), 0 4px 4px rgba(255, 250, 250, 0.075),
+    0 8px 8px rgba(208, 207, 207, 0.075), 0 16px 16px rgba(253, 253, 253, 0.075);
+}
+
+.protfolio figcaption {
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(-200px);
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  padding: 30px 0 20px 0;
+  transition: 0.3s;
+  margin: 0;
+  position: relative;
+  z-index: -1;
+}
+
+.protfolio figure:hover figcaption {
+  opacity: 1;
+  transform: translateY(-19px);
+}
+.protfolio h2 {
+  color: var(--dark-color);
+}
+.protfolio span {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--dark-color);
+}
+
+@keyframes transform {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+@keyframes movement {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(20%) rotateY(10deg);
+  }
+}
