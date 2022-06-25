@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import data from "../../data/SkillBars";
 import "./Resume.css";
-import Man2 from "../../assets/imgs/man2.jpg";
+import Man2 from "../../assets/imgs/myabdelmjid.png";
 let titlePage = "Resume";
 
 export class Resume extends Component {
@@ -21,15 +21,14 @@ export class Resume extends Component {
         <div className="contents">
           <div className="about">
             <div className="image">
-              <img src={Man2} alt="img" />
+              <img src={Man2} alt="img" className="myimg" />
             </div>
             <div className="desc">
               <div className="single-text">
                 <p>
-                  Hello! I’m Daniel Curry. Web designer from USA, California,
-                  San Francisco. I have rich experience in web site design and
-                  building, also I am good at wordpress. I love to talk with you
-                  about our unique.
+                  Hello, I'm Abdelmajid, student passionate about coding and the
+                  influence of technology on our life aspects. Since grade 8, I
+                  started working in Web development.{" "}
                 </p>
               </div>
               <div className="info-list">
@@ -56,13 +55,13 @@ export class Resume extends Component {
                     <strong>
                       <span>Address </span>
                     </strong>
-                    <span>San Francisco, EG</span>
+                    <span>Alexandria, EG</span>
                   </li>
                   <li>
                     <strong>
                       <span>Phone </span>
                     </strong>
-                    <span>+20 256 254 84 56</span>
+                    <span>+20 010 915 239 08</span>
                   </li>
                   <li>
                     <strong>

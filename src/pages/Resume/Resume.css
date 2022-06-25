@@ -4,9 +4,11 @@
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .h-100 {
   min-height: calc(100vh - 133px);
 }
+
 .title {
   margin-top: 0;
   max-width: 100%;
@@ -16,33 +18,40 @@
   text-align: center;
   color: white;
 }
+
 @media (max-width: 720px) {
   .title {
     font-size: 70px;
   }
 }
+
 .h-subtitles {
   position: relative;
   bottom: 0;
   left: 0;
 }
+
 .h-subtitles .first {
   color: white;
 }
+
 .contents {
   background-color: var(--dark-color);
   padding: 100px 300px;
 }
+
 @media (max-width: 1199px) {
   .contents {
     padding: 50px;
   }
 }
+
 @media (max-width: 720px) {
   .contents {
     padding: 20px;
   }
 }
+
 .about {
   margin-right: -1px;
   padding: 35px;
@@ -50,24 +59,33 @@
   background: var(--dark-color);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .about .desc {
   margin-left: 195px;
 }
+
 @media (max-width: 720px) {
   .about .desc {
     margin: 0;
   }
 }
+.myimg {
+  width: 160px;
+  height: 180px;
+}
+
 .about .image {
   float: left;
   width: 160px;
   font-size: 0;
 }
+
 @media (max-width: 720px) {
   .about .image {
     float: none;
   }
 }
+
 @media (max-width: 1199px) {
   .about .image {
     width: 120px;
@@ -75,20 +93,24 @@
     padding-bottom: 10px;
   }
 }
+
 .info-list {
   margin-bottom: 20px;
 }
+
 .info-list ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .info-list ul li {
   display: inline-block;
   vertical-align: top;
   width: 48%;
   margin: 0 0 6px;
 }
+
 .info-list ul li strong {
   font-weight: 400;
   color: var(--main-color);
@@ -104,14 +126,17 @@
   flex-direction: column;
   align-items: center;
 }
+
 @media (max-width: 767px) {
   .skill-bars {
     align-items: stretch;
   }
 }
+
 .skill-bars .bar {
   margin: 20px 0;
 }
+
 @media (min-width: 767px) {
   .skill-bars .bar {
     width: 80%;
@@ -121,20 +146,24 @@
 .skill-bars .bar:first-child {
   margin-top: 0px;
 }
+
 .skill-bars .bar .info {
   margin-bottom: 5px;
 }
+
 .skill-bars .bar .info span {
   font-weight: 500;
   font-size: 17px;
   opacity: 0;
   animation: showText 0.5s 1s linear forwards;
 }
+
 @keyframes showText {
   100% {
     opacity: 1;
   }
 }
+
 .skill-bars .bar .progress-line {
   height: 10px;
   width: 100%;
@@ -147,11 +176,13 @@
     0 1px rgba(255, 255, 255, 0.8);
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
+
 @keyframes animate {
   100% {
     transform: scaleX(1);
   }
 }
+
 .bar .progress-line span {
   height: 100%;
   position: absolute;
@@ -161,6 +192,7 @@
   background: var(--main-color);
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
+
 .progress-line span::before {
   position: absolute;
   content: "";
@@ -175,6 +207,7 @@
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
+
 .progress-line span::after {
   position: absolute;
   top: -28px;
@@ -188,20 +221,45 @@
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
+
 @keyframes showText2 {
   100% {
     opacity: 1;
   }
 }
+
 .progress-line.html span::after {
   content: "98%";
 }
+
 .progress-line.css span::after {
   content: "90%";
 }
+
 .progress-line.js span::after {
   content: "75%";
 }
+
 .progress-line.reactjs span::after {
-  content: "68%";
+  content: "80%";
+}
+
+.progress-line.nextjs span::after {
+  content: "90%";
+}
+
+.progress-line.sass span::after {
+  content: "60%";
+}
+
+.progress-line.tailwindcss span::after {
+  content: "95%";
+}
+
+.progress-line.bootstrap span::after {
+  content: "60%";
+}
+
+.progress-line.git span::after {
+  content: "70%";
 }

@@ -6,7 +6,7 @@ export class Footer extends Component {
       <div className="footer">
         <div className="fixed-bottom">
           <p>E: abdelmjid999@gmail.com</p>
-          <p>T: +20 015 577 382 11</p>
+          <p>T: +20 010 915 239 08</p>
         </div>
       </div>
     );
